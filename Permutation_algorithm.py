@@ -7,7 +7,7 @@ def swap(a, b):
     return a, b
 
 def permutation(array, begin, end):
-    '''get the permutation of array
+    '''get the permutation of array implemented by recursion
 
     :param array: input array
     :param begin: begin pointer

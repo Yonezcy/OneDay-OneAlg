@@ -1,5 +1,11 @@
 __author__ = 'zcy'
 
+def swap(a, b):
+    t = a
+    a = b
+    b = t
+    return a, b
+
 def permutation(array, begin, end):
     '''get the permutation of array
 
@@ -10,12 +16,15 @@ def permutation(array, begin, end):
     '''
     if begin == end:
         for i in range(end):
-            print(array[i] )
+            print array[i], ' '
+        print '\n'
         return
 
     for i in range(begin, end):
-        swap(array[i], array[begin])
+        array[i], array[begin] = swap(array[i], array[begin])
         permutation(array, begin+1, end)
-        swap(array[begin], array[i])
+        array[begin], array[i] = swap(array[begin], array[i])
 
-    return
+if __name__ == '__main__':
+    arr = [1, 2 ,3 ,4]
+    permutation(arr, 0, 4)

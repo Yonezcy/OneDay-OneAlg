@@ -21,7 +21,7 @@ class Solution {
         while (l < r) {
             maxarea =  Math.max(maxarea, Math.min(height[l], height[r]) * (r - 1));
             if (height[l] < height[r])
-                i++;
+                l++;
             else
                 r--;
         }

@@ -6,6 +6,9 @@
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+
+ //question1: why return fakehead->next instead of head?
+ //question2: why there is no headnode?
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {

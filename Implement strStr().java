@@ -1,6 +1,8 @@
 class Solution {
     public int strStr(String haystack, String needle) {
+        // needle == ""
         if (needle.equals("")) return 0;
+        // haystack == "" && needle != ""
         if (haystack.equals("") && !needle.equals("")) return -1;
         int len1 = haystack.length();
         int len2 = needle.length();

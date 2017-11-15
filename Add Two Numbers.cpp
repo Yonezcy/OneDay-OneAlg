@@ -36,7 +36,7 @@ public:
 
             if (l1 || l2 || x)
             {
-                node->next = (struct ListNode*) malloc (sizeof(struct ListNode));
+                node->next = (ListNode*) malloc (sizeof(ListNode));
                 node = node->next;             
             }   
         }  

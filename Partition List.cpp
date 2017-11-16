@@ -26,7 +26,7 @@ public:
     }
 };
 
- // Two pointer solution(not accepted)
+ // Two pointer solution(accepted)
 class Solution {
 public:
     ListNode* partition(ListNode* head, int x) {
@@ -35,8 +35,16 @@ public:
         ListNode* fakehead = (ListNode*)malloc(sizeof(ListNode));
         fakehead->next = head;
         ListNode* ptr1 = fakehead;
-        ListNode* ptr2 = head;
+        ListNode* ptr2 = fakehead;
         ListNode* nextstart = (ListNode*)malloc(sizeof(ListNode));
+        
+        while (ptr1 == ptr2 && ptr2->next) {
+            if (ptr2->next->val < x) {
+                ptr1 = ptr1->next;
+                ptr2 = ptr2->next;
+            }
+            else ptr2 = ptr2->next;
+        }
         
         while (ptr2->next) {
             if (ptr2->next->val < x) {

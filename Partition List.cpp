@@ -34,7 +34,9 @@ public:
         
         ListNode* fakehead = (ListNode*)malloc(sizeof(ListNode));
         fakehead->next = head;
+        // ptr1指向插入位置之前小于x的最后一个结点
         ListNode* ptr1 = fakehead;
+        // ptr2指向插入位置之后小于x的第一个结点的前一个结点
         ListNode* ptr2 = fakehead;
         ListNode* nextstart = (ListNode*)malloc(sizeof(ListNode));
         

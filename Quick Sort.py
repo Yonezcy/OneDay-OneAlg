@@ -22,8 +22,3 @@ def partition(r, left, right):
 
     r[left] = zhuyuan
     return left
-
-if __name__ == '__main__':
-    r = [0 ,17,5,14,67,45,6,97,34]
-    r = BinSort(r, 9)
-    print(r)

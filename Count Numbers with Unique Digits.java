@@ -1,5 +1,5 @@
 class Solution {
-    // leetcode357 dp解法 计算0-n中各个位上没有重复数字的数的个数
+    // leetcode357，dp解法，计算0-n中各个位上没有重复数字的数的个数
     public int countNumbersWithUniqueDigits(int n) {
         if (n == 0) return 1;
         int res = 10;

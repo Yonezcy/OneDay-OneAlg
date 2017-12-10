@@ -1,5 +1,5 @@
 // leetcode 198th problem
-// House Robber
+// House Robber dp solution
 class Solution {
     public int rob(int[] nums) {
         int n = nums.length;

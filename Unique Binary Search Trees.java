@@ -1,5 +1,5 @@
 // leetcode 96th problem
-// 找出能存储序列1-n的二叉树个数
+// 找出能表示序列1-n的二叉树个数
 
 // G(n):the number of unique BST for a sequence of length n.
 // F(i, n):the number of unique BST, where the number i is the root of BST, and the sequence ranges from 1 to n.

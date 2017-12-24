@@ -1,5 +1,5 @@
 // leetcode 343 problem
-// 将一个整数分解为若干整数乘积，求最大乘积
+// 将一个整数分解为若干整数的和，求最大乘积
 
 // Math Solution
 // 可以证明：3是最理想的乘积因子 https://leetcode.com/problems/integer-break/discuss 第二个解法

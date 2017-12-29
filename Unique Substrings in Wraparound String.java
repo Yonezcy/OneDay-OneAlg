@@ -3,8 +3,8 @@
 
 public class Solution {
     public int findSubstringInWraproundString(String p) {
-        // count[i] is the maximum unique substring end with ith letter.
-        int[] count = new int[26];
+        // dp[i] is the maximum unique substring end with ith letter.
+        int[] dp = new int[26];
         int maxLengthCur = 0; 
 
         for (int i = 0; i < p.length(); i++) {
@@ -13,12 +13,12 @@ public class Solution {
             else
                 maxLengthCur = 1;
             int index = p.charAt(i) - 'a';
-            count[index] = Math.max(count[index], maxLengthCur);
+            dp[index] = Math.max(dp[index], maxLengthCur);
         }
 
         int sum = 0;
         for (int i = 0; i < 26; i++) {
-            sum += count[i];
+            sum += dp[i];
         }
         return sum;
     }

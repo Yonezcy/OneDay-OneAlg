@@ -1,5 +1,5 @@
 // leetcode 523 problem
-// 找出数组中和为k的整数倍的子串（子串元素>1）
+// 找出数组中是否有和为k的整数倍的子串（子串元素>1）
 
 // (a+(n*x))%x is same as (a%x)
 // For e.g. in case of the array [23,2,6,4,7] the running sum is [23,25,31,35,42] and 

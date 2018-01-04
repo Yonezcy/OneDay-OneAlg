@@ -7,7 +7,7 @@ class Solution {
         int n = B.length;
         if (m == 0 || n == 0) return 0;
         int max = 0;
-        //dp[i][j] is the length of longest common subarray ending with nums[i] and nums[j]
+        // dp[i][j] is the length of longest common subarray ending with nums[i] and nums[j]
         int[][] dp = new int[m + 1][n + 1];
         for (int i = 0; i <= m; i++) {
             for (int j = 0; j <= n; j++) {

@@ -1,5 +1,5 @@
 // leetcode 718 problem
-// 求两个数组的最长公共子串
+// 求两个数组的最长公共子串的长度
 
 class Solution {
     public int findLength(int[] A, int[] B) {

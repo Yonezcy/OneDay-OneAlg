@@ -1,5 +1,5 @@
 // leetcode 78 problem
-// 求一位数组的所有子集
+// 求一维数组的所有子集
 
 // 经典回溯法，背下来
 class Solution {

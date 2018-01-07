@@ -18,6 +18,6 @@ class Solution(object):
             return 
         if index > len(nums):
             return
-        for i in xrange(index, len(nums)):
+        for i in range(index, len(nums)):
             self.dfs(nums, target-nums[i], i+1, path+[nums[i]], res)
         

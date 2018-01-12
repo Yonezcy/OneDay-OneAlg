@@ -1,5 +1,5 @@
 // leetcode 450 problem
-// 删除二叉树的一个结点
+// 删除二叉树中的一个结点
 
 /**
  * Definition for a binary tree node.

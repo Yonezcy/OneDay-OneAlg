@@ -1,5 +1,5 @@
 // leetcode 257 problem
-// 寻找二叉树所有根到叶子的路径
+// 寻找二叉树所有的根到叶子的路径
 
 /**
  * Definition for a binary tree node.

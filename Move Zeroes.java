@@ -3,7 +3,7 @@
 
 class Solution {
     public void moveZeroes(int[] nums) {
-        if (nums.length == null || nums.length == 0) return;
+        if (nums.length == 0) return;
         
         int insertPosition = 0;
         for (int num : nums) 

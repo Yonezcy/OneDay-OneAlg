@@ -24,3 +24,18 @@ class Solution {
         else return false;
     }
 }
+
+// solution 2:非快乐数的循环中必定含有4
+class Solution {
+    public boolean isHappy(int n) {
+        while (n != 1 && n != 4) {
+            int t = 0;
+            while (n != 0) {
+                t += (n % 10) * (n % 10);
+                n /= 10;
+            }
+            n = t;
+        }
+        return n == 1;
+    }
+}

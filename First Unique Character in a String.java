@@ -1,5 +1,5 @@
 // leetcode 387 problem
-// 找出字符串中第一个出现一次的字符（有的出现多次）
+// 找出字符串中第一个出现一次的字符（有的字符出现多次）
 
 class Solution {
     public int firstUniqChar(String s) {

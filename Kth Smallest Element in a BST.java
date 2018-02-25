@@ -1,5 +1,5 @@
 // leetcode 230 problem
-// 找出二叉树中第k小的元素
+// 找出二叉树中第k小的结点的值
 
 /**
  * Definition for a binary tree node.

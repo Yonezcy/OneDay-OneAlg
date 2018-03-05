@@ -1,5 +1,5 @@
 // leetcode 347 problem
-// 寻找数组中出现最多的前k个元素
+// 寻找数组中出现次数最多的前k个元素
 
 class Solution {
     public List<Integer> topKFrequent(int[] nums, int k) {

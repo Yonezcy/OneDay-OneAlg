@@ -1,3 +1,6 @@
+// leetcode 14 problem
+// 找出字符数组中字符串的最长公共前缀
+
 class Solution {
     //brute force
     public String longestCommonPrefix(String[] strs) {

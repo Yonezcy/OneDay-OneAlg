@@ -1,3 +1,6 @@
+// leetcode 9 problem
+// 判断一个整形数是否是回文数
+
 class Solution {
 public:
     bool isPalindrome(int x) {

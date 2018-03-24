@@ -13,7 +13,6 @@ class Solution {
     }
 }
 
-
 class Solution{
     public int maxSubArray(int a[]) { 
         int maxSum = 0, thisSum = 0; 

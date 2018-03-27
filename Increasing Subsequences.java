@@ -1,8 +1,8 @@
 // leetcode 491 problem
 // 找出一位数组中的所有递增序列（有重复，相等也算递增）
 
+// backtracking solution
 class Solution {
-
      public List<List<Integer>> findSubsequences(int[] nums) {
          Set<List<Integer>> res= new HashSet<List<Integer>>();
          List<Integer> holder = new ArrayList<Integer>();

@@ -1,5 +1,5 @@
 // leetcode 530 problem
-// 求出二叉搜索树中的结点值的最小差
+// 求出二叉搜索树中的结点值的最小绝对值差
 
 class Solution {
     int min = Integer.MAX_VALUE;

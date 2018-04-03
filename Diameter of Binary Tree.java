@@ -1,5 +1,5 @@
 // leetcode 543 problem
-// 求二叉树的直径（两人结点间的最长路径）
+// 求二叉树的直径（两个结点间的最长路径）
 
 class Solution {
     int max = 0;

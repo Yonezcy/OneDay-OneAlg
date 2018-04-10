@@ -1,6 +1,8 @@
 // leetcode 583 problem
 // 找出需要的最小步数使得两个字符串减少至相同（每次只能减一个数）
 
+// 思想为先找出最长公共子序列的长度，将两个字符串的长度分别减去最长公共子序列的长度再相加即可
+
 class Solution {
     public int minDistance(String word1, String word2) {
         int dp[][] = new int[word1.length()+1][word2.length()+1];

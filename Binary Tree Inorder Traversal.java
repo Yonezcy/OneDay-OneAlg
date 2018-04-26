@@ -1,5 +1,5 @@
 // leetcode 94 problem
-// 求二叉树的中序遍历（根左右）
+// 求二叉树的中序遍历序列（根左右）
 
 /**
  * Definition for a binary tree node.
@@ -10,6 +10,8 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
+
+// Recursive solution
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
@@ -27,5 +29,25 @@ class Solution {
                 helper(root.right, res);
             }
         }
+    }
+}
+
+// Iterative solution
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        Deque<TreeNode> stack = new ArrayDeque<>();
+        TreeNode p = root;
+        while(!stack.isEmpty() || p != null) {
+            if(p != null) {
+                stack.push(p);
+                p = p.left;
+            } else {
+                TreeNode node = stack.pop();
+                result.add(node.val);  // Add after all left children
+                p = node.right;   
+            }
+        }
+        return result;
     }
 }

@@ -6,10 +6,12 @@ public class Solution {
         int n = nums.length;
         int[] res = new int[n];
         res[0] = 1;
+        // 求前n-1个元素的乘积
         for (int i = 1; i < n; i++) {
             res[i] = res[i - 1] * nums[i - 1];
         }
         int right = 1;
+        // 再补上后面的元素
         for (int i = n - 1; i >= 0; i--) {
             res[i] *= right;
             right *= nums[i];

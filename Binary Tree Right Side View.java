@@ -1,5 +1,5 @@
 // leetcode 199 problem
-// 返回二叉树每一层最右边的结点
+// 返回二叉树每一层最右边的结点集合
 
 public class Solution {
     public List<Integer> rightSideView(TreeNode root) {

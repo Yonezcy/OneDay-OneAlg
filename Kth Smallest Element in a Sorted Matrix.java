@@ -1,6 +1,7 @@
 // leetcode 378 problem
 // 给定一个每一行每一列都是升序的矩阵，找出第k小的元素
 
+// Binary Search Solution
 public class Solution {
     public int kthSmallest(int[][] matrix, int k) {
         int lo = matrix[0][0], hi = matrix[matrix.length - 1][matrix[0].length - 1] + 1; //[lo, hi)

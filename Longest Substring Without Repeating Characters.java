@@ -55,3 +55,26 @@ class Solution{
         return ans;
     }
 }
+
+// Two pointers Solution
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        if (s.length() == 0) return 0;
+        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+        int max = 0;
+        // i represent the right pointer, j represent the left point
+        for (int i = 0, j = 0; i < s.length(); i++) {
+            if (map.containsKey(s.charAt(i))) {
+                // the reason why not set j = map.get(s.charAt(i))+1 is that if some characters repeated,
+                // the left pointer should point the last position 
+                // For example, abcab, when we scan through it in the end, the left pointer point the second
+                // a, not the first b
+                j = Math.max(j, map.get(s.charAt(i))+1);
+            }
+            map.put(s.charAt(i), i);
+            // Calculate length
+            max = Math.max(max, i-j+1);
+        }
+        return max;
+    }
+}

@@ -1,3 +1,6 @@
+// leetcode 3 problem
+// 找出字符串中没有重复字符的最长子串
+
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         int n = s.length();

@@ -1,3 +1,6 @@
+// leetcode 5 problem
+// 求最大回文子串的长度
+
 class Solution {
     public String longestPalindrome(String s) {
         int start = 0, end = 0;

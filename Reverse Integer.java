@@ -9,9 +9,10 @@ class Solution {
         {
             int tail = x % 10;
             int newResult = result * 10 + tail;
-            // 溢出的话前后结果就会不相等
-            if ((newResult - tail) / 10 != result)
-                return 0;
+            
+            // 溢出前后结果就会不相等
+            if ((newResult - tail) / 10 != result) return 0;
+
             result = newResult;
             x = x / 10;
         }

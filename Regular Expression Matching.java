@@ -1,5 +1,5 @@
 // leetcode 10 problem
-// 正则表达式匹配
+// 实现正则表达式匹配
 
 '''
 1, If p.charAt(j) == s.charAt(i) :  dp[i][j] = dp[i-1][j-1];

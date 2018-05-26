@@ -1,3 +1,6 @@
+// leetcode 19 problem
+// 删除链表从后往前的第n个结点
+
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {

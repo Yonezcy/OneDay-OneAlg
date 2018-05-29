@@ -8,8 +8,9 @@ public:
         addingpar(res, "", n, 0);
         return res;
     }
+    // n和m表示剩余需要添加的左和右括号对
     void addingpar(vector<string> &v, string str, int n, int m){
-        if (n==0 && m==0) {
+        if (n == 0 && m == 0) {
             v.push_back(str);
             return;
         }

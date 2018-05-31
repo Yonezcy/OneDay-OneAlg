@@ -1,11 +1,6 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
+// leetcode 24 problem
+// 两两交换链表中的相邻结点
+
 class Solution {
     public ListNode swapPairs(ListNode head) {
       if(head == null || head.next == null)

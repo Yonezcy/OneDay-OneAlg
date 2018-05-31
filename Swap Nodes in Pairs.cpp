@@ -1,14 +1,6 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
+// leetcode 24 problem
+// 两两交换链表中的相邻结点
 
- //question1: why return fakehead->next instead of head?
- //question2: why there is no headnode?
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {

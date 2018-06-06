@@ -10,7 +10,7 @@ class Solution {
         int len1 = haystack.length();
         int len2 = needle.length();
         int i, j;
-        for (i=0; i<len1; i++) {
+        for (i = 0; i < len1; i++) {
             if ((i+len2) > len1) break;
             if (haystack.substring(i, i+len2).equals(needle)) return i;
         }

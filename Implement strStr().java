@@ -1,3 +1,6 @@
+// leetcode 28 problem
+// 给定两个字符串，找出第二个字符串在第一个字符串中出现第一次的位置
+
 class Solution {
     public int strStr(String haystack, String needle) {
         // needle == ""

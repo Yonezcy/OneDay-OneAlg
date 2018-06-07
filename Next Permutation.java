@@ -14,7 +14,7 @@ class Solution {
             }
             swap(nums, i, j);
         }
-        reverse(nums, i + 1);
+        reverse(nums, i+1);
     }
 
     private void reverse(int[] nums, int start) {

@@ -1,3 +1,6 @@
+// leetcode 31 problem
+// 找出一维数组的下一个排列
+
 class Solution {
     public void nextPermutation(int[] nums) {
         int i = nums.length - 2;

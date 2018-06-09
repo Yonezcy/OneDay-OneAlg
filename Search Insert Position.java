@@ -1,8 +1,6 @@
-// leetcode 35th problem Search Insert Position
-// Given a sorted array and a target value, return the index if the target is found. 
-// If not, return the index where it would be if it were inserted in order.
-// You may assume no duplicates in the array.
-// Binary search solution
+// leetcode 35 problem
+// 找出有序数组中插入target的位置
+
 class Solution {
     public int searchInsert(int[] A, int target) {
         int low = 0, high = A.length - 1;

@@ -1,5 +1,5 @@
 // leetcode 40 problem
-// 求数组中和为target的序列（允许重复取数）
+// 求数组中和为target的序列（不允许重复取数）
 
 // 经典回溯，类比permutation、subset记忆
 class Solution {
@@ -18,7 +18,7 @@ class Solution {
             for(int i = start; i < nums.length; i++){
                 if(i > start && nums[i] == nums[i-1]) continue; // skip duplicates
                 tempList.add(nums[i]);
-                backtrack(list, tempList, nums, remain - nums[i], i + 1);
+                backtrack(list, tempList, nums, remain-nums[i], i + 1);
                 tempList.remove(tempList.size() - 1); 
             }
         }

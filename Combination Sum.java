@@ -1,5 +1,5 @@
 // leetcode 39 problem
-// 求数组中和为target的所有序列
+// 求数组中和为target的所有序列（允许重复取某一个数）
 
 // 经典回溯法，类比permutation、subset记忆
 class Solution {

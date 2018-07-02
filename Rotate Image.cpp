@@ -1,5 +1,5 @@
 // leetcode 48 problem
-// Rotate Image
+// 将图像按顺时针／逆时针方向旋转
 
 /*
  * clockwise rotate

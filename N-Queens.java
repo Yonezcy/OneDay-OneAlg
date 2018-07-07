@@ -1,5 +1,6 @@
-// leetcode 51th N-Queens problem
-// Java Solution
+// leetcode 51th problem
+// n皇后问题
+
 class Solution {
 	public List<List<String>> solveNQueens(int n) {
 		char[][] board = new char[n][n];

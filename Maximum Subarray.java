@@ -1,4 +1,5 @@
-// 最大子序列和
+// leetcode 53 problem
+// 求数组最大子序列和
 
 class Solution {
     public int maxSubArray(int[] nums) {

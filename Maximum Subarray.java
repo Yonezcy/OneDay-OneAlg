@@ -14,6 +14,7 @@ class Solution {
     }
 }
 
+// 只适用于非0数组
 class Solution{
     public int maxSubArray(int a[]) { 
         int maxSum = 0, thisSum = 0; 

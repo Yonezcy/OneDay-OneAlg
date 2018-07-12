@@ -1,17 +1,11 @@
-//Leetcode 61th problem
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
+// Leetcode 61th problem
+// 旋转链表，将链表后k个结点按顺序移到前面
+
 class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {
+
         if (head == NULL || k == 0) return head;
-        
         ListNode* left = (ListNode*)malloc(sizeof(ListNode));
         ListNode* newLeft = (ListNode*)malloc(sizeof(ListNode));
         
@@ -27,8 +21,7 @@ public:
         left->next = head;
 
         k = k % length;
-        
-        for (int i=0; i<length-k; i++) {
+        for (int i = 0; i < length-k; i++) {
             left = left->next;
         }
         newLeft = left->next;

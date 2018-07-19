@@ -5,7 +5,6 @@
 class Solution {
     public List<List<Integer>> combine(int n, int k) {
         if (n == 0 || k == 0) return null;
-        
         List<List<Integer>> list = new ArrayList<List<Integer>>();
         combination(list, new ArrayList<Integer>(), 1, n, k);
         return list;

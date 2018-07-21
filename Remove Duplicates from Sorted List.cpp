@@ -1,12 +1,6 @@
 // leetcode 82th problem
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
+// 删除链表中的重复元素
+
 class Solution {
 public:
     ListNode* deleteDuplicates(ListNode* head) {

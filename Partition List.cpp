@@ -1,23 +1,16 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
- // Accepted solution
- class Solution {
+// leetcode 86 problem
+// 将链表中小于target的结点移到前面，并保持这些结点原来的顺序
+
+class Solution {
 public:
     ListNode* partition(ListNode* head, int x) {
         ListNode left(0), right(0);
         ListNode *l = &left, *r = &right;
 
-        while(head){
+        while (head) {
             ListNode* & ref = head->val < x ? l : r;
             ref->next = head;
             ref = ref->next;
-            
             head = head->next;
         }
         l->next = right.next;

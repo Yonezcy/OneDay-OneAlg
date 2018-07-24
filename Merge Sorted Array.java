@@ -1,5 +1,6 @@
 // leetcode 88th problem
 // 合并两个有序数组（通过在两个数组分别设置指针实现）
+
 class Solution {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1;

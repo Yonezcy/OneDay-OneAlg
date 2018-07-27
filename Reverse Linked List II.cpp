@@ -1,11 +1,6 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
+// leetcode 92 problem
+// 将单链表指定位置区间里的结点反转
+
 class Solution {
 public:
     ListNode *reverseBetween(ListNode *head, int m, int n) {

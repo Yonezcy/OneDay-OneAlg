@@ -1,14 +1,6 @@
 // leetcode 100th problem
-// judge whether the two binary trees are equal
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+// 判断两个二叉搜索树是否相等
+
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if(p == null && q == null) return true;

@@ -1,14 +1,6 @@
 // leetcode 104th problem
-// find the depth of binary tree
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
+// 求二叉树的最大深度
+
 class Solution {
 public:
     int maxDepth(TreeNode* root) {

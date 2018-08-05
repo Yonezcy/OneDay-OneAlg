@@ -11,9 +11,8 @@ class Solution {
         
     public void levelMaker(List<List<Integer>> list, TreeNode root, int level) {
         if (root == null) return;
-        if (level >= list.size()) {
+        if (level >= list.size())
             list.add(0, new LinkedList<Integer>());
-        }
         levelMaker(list, root.left, level+1);
         levelMaker(list, root.right, level+1);
         list.get(list.size()-level-1).add(root.val);

@@ -1,15 +1,6 @@
 // leetcode 108 problem 
-// 将有序数组转换为高度平衡二叉树
+// 将有序数组转换为二叉搜索树
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
 class Solution {
     public TreeNode sortedArrayToBST(int[] num) {
         if (num.length == 0) return null;

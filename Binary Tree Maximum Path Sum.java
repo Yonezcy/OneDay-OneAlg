@@ -14,7 +14,7 @@ class Solution {
         if (node == null) return 0;
         int left = Math.max(0, maxPathDown(node.left));
         int right = Math.max(0, maxPathDown(node.right));
-        maxValue = Math.max(maxValue, left + right + node.val);
+        maxValue = Math.max(maxValue, left+right+node.val);
 
         // 只能是单边路径，不能分叉
         return Math.max(left, right) + node.val;

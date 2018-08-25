@@ -9,8 +9,8 @@ class Solution {
        return res;
     }
     
-    public void dfs(String s, int pos, List<String> list, List<List<String>> res){
-        if (pos==s.length()) res.add(new ArrayList<String>(list));
+    public void dfs(String s, int pos, List<String> list, List<List<String>> res) {
+        if (pos == s.length()) res.add(new ArrayList<String>(list));
         else {
             for (int i = pos; i < s.length(); i++) {
                 if (isPal(s, pos, i)) {
@@ -23,7 +23,9 @@ class Solution {
     }
     
     public boolean isPal(String s, int low, int high){
-        while (low<high) if (s.charAt(low++) != s.charAt(high--)) return false;
+        while (low < high) 
+            if (s.charAt(low++) != s.charAt(high--)) 
+                return false;
         return true;
     }
 }

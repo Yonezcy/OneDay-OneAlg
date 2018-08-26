@@ -6,7 +6,6 @@
 class Solution {
     public int singleNumber(int[] nums) {
         if (nums.length == 0) return 0;
-        
         int one = 0, two = 0;
         for (int i = 0; i < nums.length; i++) {
             one = (one ^ nums[i]) & (~two);

@@ -1,14 +1,6 @@
 // leetcode 143 problem
 // 对链表进行前后依次取数，进行重新排序
 
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
 class Solution {
     public void reorderList(ListNode head) {
         if (head == null || head.next == null) return;

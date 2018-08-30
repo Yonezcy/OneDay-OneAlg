@@ -1,31 +1,19 @@
 // leetcode 148 problem
 // 将单链表进行排序，时间复杂度限制在O(nlogn)，空间复杂度为常量空间
 
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-
 // 合并排序法
 public class Solution {
-  
   public ListNode sortList(ListNode head) {
     if (head == null || head.next == null)
       return head;
-        
+
     // step 1. cut the list to two halves
     ListNode prev = null, slow = head, fast = head;
-    
     while (fast != null && fast.next != null) {
       prev = slow;
       slow = slow.next;
       fast = fast.next.next;
     }
-    
     prev.next = null;
     
     // step 2. sort each half
@@ -58,5 +46,4 @@ public class Solution {
     
     return l.next;
   }
-
 }

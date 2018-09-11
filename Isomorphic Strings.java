@@ -7,6 +7,7 @@ class Solution {
         int m2[] = new int[256];
         int n = s.length();
         for (int i = 0; i < n; i++) {
+            // m1和m2中存的是字符在原字符串中的位置，判断在前赋值在后
             if (m1[s.charAt(i)] != m2[t.charAt(i)]) return false;
             m1[s.charAt(i)] = i + 1;
             m2[t.charAt(i)] = i + 1;

@@ -1,12 +1,7 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
- // iterative solution
+// leetcode 206 problem
+// Reverse LinkList.
+
+// Iterative Solution.
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
@@ -22,7 +17,7 @@ public:
         return pre;
     }
 };
-// recursive solution
+// Recursive Solution.
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {

@@ -1,15 +1,7 @@
 // leetcode 230 problem
-// 找出二叉树中第k小的结点的值
+// 找出二叉搜索树中第k小的结点的值
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+// Solution: According to the number of nodes of left and right subtree to find it.
 class Solution {
      public int kthSmallest(TreeNode root, int k) {
         int count = countNodes(root.left);

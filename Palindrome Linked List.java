@@ -1,15 +1,6 @@
 // leetcode 234
 // 判断一个链表是否是回文链表
 
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-
 // 找到中间那个结点，将后面的所有结点reverse，判断前一半和后一半是否equal
 class Solution {
     public boolean isPalindrome(ListNode head) {
@@ -18,6 +9,7 @@ class Solution {
             fast = fast.next.next;
             slow = slow.next;
         }
+        // 在奇数个结点的情况下去掉最中间的结点，减少开销
         if (fast != null) { 
             slow = slow.next;
         }

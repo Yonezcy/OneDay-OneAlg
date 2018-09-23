@@ -15,3 +15,19 @@ class Solution {
         return true;
     }
 }
+
+
+class Solution {
+    public boolean isIsomorphic(String s, String t) {
+        int m[] = new int[26];
+        int n = s.length();
+        for (int i = 0; i < n; i++) {
+            if (m[s.charAt(i)-'a'] != m[t.charAt(i)-'a']) return false;
+            // The reason why right side is equal to i+1 instead of ++ is to 
+            // store the position of former alphabets.
+            m[s.charAt(i)-'a'] = i + 1;
+            m[t.charAt(i)-'a'] = i + 1;
+        }
+        return true;
+    }
+}

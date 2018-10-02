@@ -1,7 +1,7 @@
 // leetcode 322 problem
 // 给定一个总和和若干整数，求它们相加得到总和用到的的最少整数个数（可以重复取数）
 
-// O(n*amount) time solution.
+// O(n*amount) Time Solution.
 class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {

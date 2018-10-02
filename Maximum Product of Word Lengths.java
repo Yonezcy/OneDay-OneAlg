@@ -10,7 +10,7 @@ class Solution {
             String tmp = words[i];
             value[i] = 0;
             for (int j = 0; j < tmp.length(); j++) {
-                // 左移一位的原因是让最后一位表示'a'
+                // 把1左移i位，对应位相加
                 value[i] |= 1 << (tmp.charAt(j) - 'a');
             }
         }

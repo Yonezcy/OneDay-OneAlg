@@ -1,10 +1,10 @@
 // leetcode 344 problem
-// reverse string
+// Reverse String
 
-// solution 1: using extra space
+// Solution 1: Using extra space(O(n))
 class Solution {
     public String reverseString(String s) {
-        char[] word = s.toCharArray();
+        char word[] = s.toCharArray();
         int i = 0;
         int j = s.length() - 1;
         while (i < j) {
@@ -18,7 +18,7 @@ class Solution {
     }
 }
 
-// solution 2: recursive
+// Solution 2: Recursive(O(n))
 class Solution {
     public String reverseString(String s) {
         int length = s.length();

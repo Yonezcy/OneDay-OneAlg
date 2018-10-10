@@ -22,19 +22,15 @@ void merge_sort(int arr[], int len) {
 		a = b;
 		b = temp;
 	}
-	if (a != arr) {
-		int i;
-		for (i = 0; i < len; i++)
-			b[i] = a[i];
-		b = a;
-	}
-	free(b);
-}
-int min(int x, int y) {
-	return x < y ? x : y;
+	return b
 }
 
 // Top-down -- Recursive Solution.
+void merge_sort(int arr[], const int len) {
+	int reg[len];
+	merge_sort_recursive(arr, reg, 0, len-1);
+}
+
 void merge_sort_recursive(int arr[], int reg[], int start, int end) {
 	if (start >= end)
 		return;
@@ -52,8 +48,4 @@ void merge_sort_recursive(int arr[], int reg[], int start, int end) {
 		reg[k++] = arr[start2++];
 	for (k = start; k <= end; k++)
 		arr[k] = reg[k];
-}
-void merge_sort(int arr[], const int len) {
-	int reg[len];
-	merge_sort_recursive(arr, reg, 0, len - 1);
 }

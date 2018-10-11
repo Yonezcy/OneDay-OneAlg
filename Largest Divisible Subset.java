@@ -1,7 +1,7 @@
 // leetcode 368 problem
-// 给定一串互不相同的正数，找出最大的子集满足两两元素之间一定有一个是另一个的因子
+// 给定一串互不相同的正数，找出最大的子集满足两两元素之间一定能够整除
 
-// DP Solution
+// DP Solution.
 class Solution {
     public List<Integer> largestDivisibleSubset(int[] nums) {
         int n = nums.length;
@@ -12,7 +12,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             count[i] = 1;
             pre[i] = -1;
-            for (int j = i - 1; j >= 0; j--) {
+            for (int j = i-1; j >= 0; j--) {
                 if (nums[i] % nums[j] == 0) {
                     if (1 + count[j] > count[i]) {
                         count[i] = count[j] + 1;

@@ -1,5 +1,5 @@
 // leetcode 383 problem
-// 判断一个字符串a是否可以从另一个字符串b里构建（b里有a相同的字符，数量大于等于，位置任意）
+// 判断一个字符串a是否可以从另一个字符串b里构建（a的所有字符都在b中，位置任意）
 
 class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {

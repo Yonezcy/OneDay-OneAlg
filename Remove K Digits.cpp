@@ -38,7 +38,7 @@ public:
         res.erase(keep, string::npos);
         // trim leading zeros
         int s = 0;
-        while (s < (int)res.size()-1 && res[s] == '0')  s++;
+        while (s < (int)res.size()-1 && res[s] == '0') s++;
         res.erase(0, s);
         return res == "" ? "0" : res;
     }

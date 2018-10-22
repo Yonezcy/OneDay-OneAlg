@@ -8,7 +8,7 @@ class Solution {
         String result = "";
         while (num != 0) {
             result = map[(num & 15)] + result; 
-            // >>> 高位补0；>> 高位补上原来的高位，左移没有 <<< 因为不存在符号问题
+            // >>> 高位补0；>> 高位补上原来的高位. 左移没有 <<< 因为不存在符号问题
             num = (num >>> 4);
         }
         return result;

@@ -1,5 +1,5 @@
 // leetcode 409 problem
-// 求字符数组中可构建的回文的最大长度
+// 选取字符数组中的字符，求可构建的回文的最大长度
 
 class Solution {
     public int longestPalindrome(String s) {

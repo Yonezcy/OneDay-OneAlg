@@ -1,7 +1,7 @@
 // leetcode 413 problem
-// 求序列中算数切片（等差数列且数的个数不小于3）的数量
+// 求数组中算数切片（等差数列且数的个数不小于3）的数量
 
-// Mathematic Solution
+// Mathematic Solution.
 class Solution {
     public int numberOfArithmeticSlices(int[] A) {
         int curr = 0, sum = 0;
@@ -16,11 +16,12 @@ class Solution {
     }
 }
 
-// DP Solution
+// DP Solution.
 class Solution {
     public int numberOfArithmeticSlices(int[] A) {
         int n = A.length;
         if (n < 3) return 0;
+        // dp[i] represent the number of slices which are ended in i.
         int dp[] = new int[n];
         if (A[2] - A[1] == A[1] - A[0]) dp[2] = 1;
         int sum = dp[2];

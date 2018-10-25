@@ -1,5 +1,5 @@
 // leetcode 415 problem
-// 求两个string类型的整形数相加后的结果（不能把输入直接转化为int）
+// 求两个string类型的整形数相加后的结果（开头没有leading zeros）
 
 class Solution {
     public String addStrings(String num1, String num2) {

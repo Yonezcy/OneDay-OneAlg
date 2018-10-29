@@ -1,5 +1,5 @@
 // leetcode 448 problem
-// 在一维数组中寻找顺序缺失的数（一些数出现两次，另一些一次）
+// 在一维数组中寻找顺序缺失的数
 
 class Solution {
      public List<Integer> findDisappearedNumbers(int[] nums) {

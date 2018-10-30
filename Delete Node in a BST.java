@@ -1,18 +1,9 @@
 // leetcode 450 problem
-// 删除二叉树中的一个结点
+// 删除二叉树中的一个结点，返回更新后的二叉树
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
 class Solution {
     public TreeNode deleteNode(TreeNode root, int key) {
-        if(root == null) return null;
+        if (root == null) return null;
 
         if (key < root.val)
             root.left = deleteNode(root.left, key);

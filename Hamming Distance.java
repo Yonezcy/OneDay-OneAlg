@@ -1,7 +1,6 @@
 // leetcode 461 problem
 // 求两个数的二进制表示不同的位数
 
-// 等价于将两个数异或后求结果为1的位数
 class Solution {
     public int hammingDistance(int x, int y) {
         int dist = 0, n = x ^ y;

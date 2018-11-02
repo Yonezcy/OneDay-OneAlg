@@ -17,9 +17,8 @@ public class Solution {
         }
 
         int sum = 0;
-        for (int i = 0; i < 26; i++) {
+        for (int i = 0; i < 26; i++)
             sum += dp[i];
-        }
         return sum;
     }
 }

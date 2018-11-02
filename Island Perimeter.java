@@ -8,8 +8,8 @@ class Solution {
             for (int j = 0; j < grid[i].length; j++) {
                 if (grid[i][j] == 1) {
                     islands++; // count islands
-                    if (i < grid.length - 1 && grid[i+1][j] == 1) neighbours++; // count down neighbours
-                    if (j < grid[i].length - 1 && grid[i][j+1] == 1) neighbours++; // count right neighbours
+                    if (i < grid.length-1 && grid[i+1][j] == 1) neighbours++; // count down neighbours
+                    if (j < grid[i].length-1 && grid[i][j+1] == 1) neighbours++; // count right neighbours
                 }
             }
         }

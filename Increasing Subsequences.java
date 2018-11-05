@@ -1,10 +1,10 @@
 // leetcode 491 problem
-// 找出一位数组中的所有递增序列（有重复，相等也算递增）
+// 找出数组中的所有递增序列（有重复，相等也算递增）
 
-// backtracking solution
+// Backtracking Solution.
 class Solution {
      public List<List<Integer>> findSubsequences(int[] nums) {
-         Set<List<Integer>> res= new HashSet<List<Integer>>();
+         Set<List<Integer>> res = new HashSet<List<Integer>>();
          List<Integer> holder = new ArrayList<Integer>();
          findSequence(res, holder, 0, nums);
          List result = new ArrayList(res);
@@ -16,7 +16,7 @@ class Solution {
             res.add(new ArrayList(holder));
         }
         for (int i = index; i < nums.length; i++) {
-            if(holder.size() == 0 || holder.get(holder.size()-1) <= nums[i]) {
+            if (holder.size() == 0 || holder.get(holder.size()-1) <= nums[i]) {
                 holder.add(nums[i]);
                 findSequence(res, holder, i+1, nums);
                 holder.remove(holder.size() - 1);

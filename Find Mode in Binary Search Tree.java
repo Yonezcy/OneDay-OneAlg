@@ -1,15 +1,7 @@
 // leetcode 501 problem
-// 找出二叉树中出现次数最多的结点
+// 找出二叉搜索树中出现次数最多的结点
 
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
+// Using extra space.
 public class Solution {
     public Integer prev = null;
     public int count = 1;
@@ -21,7 +13,8 @@ public class Solution {
         traverse(root, list);
         
         int[] res = new int[list.size()];
-        for (int i = 0; i < list.size(); i++) res[i] = list.get(i);
+        for (int i = 0; i < list.size(); i++) 
+            res[i] = list.get(i);
         return res;
     }
     

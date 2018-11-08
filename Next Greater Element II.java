@@ -1,6 +1,7 @@
 // leetcode 503 problem
-// 找出数组中比所有数大的第一个数（using stack）
+// 找出数组中后面第一个比每个数大的元素的集合
 
+// Extra space solution(Stack and array).
 class Solution {
     public int[] nextGreaterElements(int[] nums) {
         int n = nums.length, next[] = new int[n];

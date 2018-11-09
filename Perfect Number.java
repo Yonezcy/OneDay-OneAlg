@@ -1,5 +1,5 @@
 // leetcode 507 problem
-// 判断一个数是否是perfect number（除了本身的约数之和为它本身）
+// 判断一个数是否是perfect number(除了本身的所有因子之和为它本身)
 
 class Solution {
     public boolean checkPerfectNumber(int num) {

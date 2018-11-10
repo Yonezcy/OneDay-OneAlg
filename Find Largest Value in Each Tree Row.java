@@ -1,5 +1,5 @@
 // leetcode 515 problem
-// 找出二叉树中每行最大的结点的值
+// 找出二叉树中每行最大结点值
 
 class Solution {
     public List<Integer> largestValues(TreeNode root) {
@@ -8,15 +8,14 @@ class Solution {
         return res;
     }
     private void helper(TreeNode root, List<Integer> res, int d){
-        if (root == null) {
+        if (root == null)
             return;
-        }
-       //expand list size
+        // Expand list size.
         if (d == res.size()) {
             res.add(root.val);
         }
         else {
-        //or set value
+        // Or set value.
             res.set(d, Math.max(res.get(d), root.val));
         }
         helper(root.left, res, d+1);

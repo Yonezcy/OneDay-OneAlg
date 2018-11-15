@@ -1,5 +1,5 @@
 // leetcode 538 problem
-// 将一颗二叉查询树转换为greater tree（所有结点的值加上比它大的所有结点的值形成的树）
+// 将一颗BST转换为Greater Tree(所有结点的值加上比它大的所有结点的值形成的树)
 
 class Solution {
     public int sum = 0;

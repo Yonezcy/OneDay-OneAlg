@@ -1,5 +1,5 @@
 // leetcode 547 problem
-// 找出方阵中不同的朋友圈个数
+// 求connected component的个数
 
 // DFS Solution
 class Solution {

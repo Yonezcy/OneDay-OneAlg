@@ -11,6 +11,8 @@ class Solution {
             sum += nums[i];
             
             // 如果之前有存在presum且presum+k=sum，说明遍历至此一定存在和为k的子串，数量取决于presum的数量
+            // if we know SUM[0, i-1] and SUM[0, j], then we can easily get SUM[i, j].
+            // we can prove that all the SUM[i, j] could be calculated.
             if (preSum.containsKey(sum-k)) {
                 result += preSum.get(sum-k);
             }

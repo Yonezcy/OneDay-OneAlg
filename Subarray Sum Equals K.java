@@ -1,5 +1,5 @@
 // leetcode 560 problem
-// 求和为k的子串的个数
+// 求和为k的子串个数
 
 class Solution {
     public int subarraySum(int[] nums, int k) {

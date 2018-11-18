@@ -33,6 +33,7 @@ public class Solution {
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < nums[0].length; j++) {
                 res[rows][cols] = nums[i][j];
+                // key point.
                 cols++;
                 if (cols == c) {
                     rows++;
@@ -53,6 +54,7 @@ public class Solution {
         int count = 0;
         for (int i = 0; i < nums.length; i++) {
             for (int j = 0; j < nums[0].length; j++) {
+                // trick.
                 res[count/c][count%c] = nums[i][j];
                 count++;
             }

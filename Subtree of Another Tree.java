@@ -1,6 +1,7 @@
 // leetcode 572 problem
 // 判断一棵二叉树是否是另一棵二叉树的子树
 
+// Recursive solution.
 class Solution {
     public boolean isSubtree(TreeNode s, TreeNode t) {
         if (s == null) return false;

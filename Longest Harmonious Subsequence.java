@@ -9,8 +9,8 @@ class Solution {
         }
         int result = 0;
         for (long key : map.keySet()) {
-            if (map.containsKey(key + 1)) {
-                result = Math.max(result, map.get(key + 1) + map.get(key));
+            if (map.containsKey(key+1)) {
+                result = Math.max(result, map.get(key+1) + map.get(key));
             }
         }
         return result;

@@ -1,5 +1,5 @@
 // leetcode 617 problem
-// 合并两个二叉树
+// 合并两个二叉树(overlap的节点值等于两颗二叉树的节点的值的和)
 
 class Solution {
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {

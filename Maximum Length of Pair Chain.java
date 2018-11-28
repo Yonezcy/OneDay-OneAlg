@@ -1,7 +1,7 @@
 // leetcode 646 problem
-// 找出二维数组中可以形成连续递增序列的一位数组的最大数量
+// 找出二维数组中可以形成连续递增序列的一维数组的最大数量
 
-// dp[i]是到第i个一位数组为止的最大数量
+// dp[i]是到第i个一维数组为止的最大数量
 // 状态转移方程：dp[i] = max(dp[i], pairs[i][0] > pairs[j][1]? dp[j] + 1 : dp[j]) for j in range(0, i)
 
 class Solution {
@@ -15,6 +15,6 @@ class Solution {
                 dp[i] = Math.max(dp[i], pairs[i][0] > pairs[j][1]? dp[j] + 1 : dp[j]);
             }
         }
-        return dp[pairs.length - 1];
+        return dp[pairs.length-1];
     }
 }

@@ -1,5 +1,5 @@
 // leetcode 637 problem
-// 求二叉树中每一层结点的均值
+// 求二叉树每一层结点值的均值
 
 // BFS Solution
 class Solution {

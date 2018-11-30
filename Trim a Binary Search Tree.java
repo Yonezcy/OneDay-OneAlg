@@ -1,5 +1,5 @@
 // leetcode 669 problem
-// 给定区间[L, R]，修剪二叉搜索树（剪掉val在区间外的结点）
+// 给定区间[L, R]，修剪二叉搜索树（剪掉value在区间外的结点）
 
 class Solution {
     public TreeNode trimBST(TreeNode root, int L, int R) {

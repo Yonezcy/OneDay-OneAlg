@@ -31,7 +31,7 @@ class Solution {
         for (int i = start_index; i < nums.length; i++) {
             if (visited[i] == 0) {
                 visited[i] = 1;
-                if (canPartition(nums, visited, i+1, k, cur_sum + nums[i], cur_num++, target)) return true;
+                if (canPartition(nums, visited, i+1, k, cur_sum+nums[i], cur_num++, target)) return true;
                 visited[i] = 0;
             }
         }

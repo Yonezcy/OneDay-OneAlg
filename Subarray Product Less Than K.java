@@ -22,6 +22,6 @@ class Solution {
             }
             count += j - i + 1;
         }
-        return count;        
+        return count;
     }
 }

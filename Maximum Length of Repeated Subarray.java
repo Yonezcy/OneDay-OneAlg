@@ -1,5 +1,5 @@
 // leetcode 718 problem
-// 求两个数组的最长公共子串的长度
+// 求两个数组的最长公共子串的长度(LCS问题)
 
 class Solution {
     public int findLength(int[] A, int[] B) {
@@ -7,7 +7,8 @@ class Solution {
         int n = B.length;
         if (m == 0 || n == 0) return 0;
         int max = 0;
-        // dp[i][j] is the length of longest common subarray ending with nums[i] and nums[j].
+        // dp[i][j] is the length of longest common subarray ending with A[i-1] and B[j-1].
+        // if end with A[i] and B[j], corner condition i=0 cannot be controled.
         int[][] dp = new int[m+1][n+1];
         for (int i = 0; i <= m; i++) {
             for (int j = 0; j <= n; j++) {

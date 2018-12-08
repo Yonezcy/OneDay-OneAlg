@@ -1,5 +1,5 @@
 // leetcode 53 problem
-// 求数组最大子序列和
+// 求数组最大连续子序列和
 
 class Solution {
     public int maxSubArray(int[] nums) {
@@ -15,16 +15,16 @@ class Solution {
 }
 
 // 只适用于非0数组
-class Solution{
+class Solution {
     public int maxSubArray(int a[]) { 
         int maxSum = 0, thisSum = 0; 
         for (int j = 0; j < a.size(); j++) {
             thisSum += a[j]; 
             if (thisSum > maxSum) 
                 maxSum = thisSum;
-            else if (thisSum < 0) 
-                thisSum = 0;    
+            else if (thisSum < 0)
+                thisSum = 0;
         }
-        return maxSum; 
+        return maxSum;
     }
 }

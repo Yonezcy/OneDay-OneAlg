@@ -1,28 +1,20 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
+// leetcode 2 problem
+// 把两个链表里对应的数相加
+
 class Solution {
 public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
-    {
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         if (!l1) return l2;
         if (!l2) return l1;
         int x = 0;
         ListNode* node = (ListNode*) malloc (sizeof(ListNode));
         ListNode* head = node;
-        while(l1 || l2 || x )    
-        {
+        while (l1 || l2 || x ) {
             node->val = 0;
             if (l1 != NULL) node->val += l1->val;
             if (l2 != NULL) node->val += l2->val;
             if (x != 0) node->val += x;
-            if (node->val > 9)
-            {
+            if (node->val > 9) {
                 node->val -= 10;  
                 x = 1 ;           
             }
@@ -34,8 +26,7 @@ public:
             if (l2 != NULL)
                 l2 = l2->next; 
 
-            if (l1 || l2 || x)
-            {
+            if (l1 || l2 || x) {
                 node->next = (ListNode*) malloc (sizeof(ListNode));
                 node = node->next;             
             }   
@@ -45,14 +36,13 @@ public:
     }
 };
 
-// Time exceed function
+// Time exceed solution(my solution).
 /*
-Not using extra space
+Not use extra space.
 */
 class Solution {
 public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
-    {
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         if (!l1) return l2;
         if (!l2) return l1;
         int len1 = 0, len2 = 0;

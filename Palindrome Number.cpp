@@ -4,7 +4,7 @@
 class Solution {
 public:
     bool isPalindrome(int x) {
-        // negative integer is not palindrome number!
+        // Negative integer is not palindrome number!
         return (x >= 0 && reverse(x) == x);
     }
     int reverse(int x) {
@@ -14,7 +14,6 @@ public:
             isPositive = false;
             x *= -1;
         }
-
         while (x > 0) {
             res = res * 10 + x % 10;
             x /= 10;

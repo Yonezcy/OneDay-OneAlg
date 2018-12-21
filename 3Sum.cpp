@@ -1,5 +1,7 @@
+// leetcode 15 problem
+// 3 sum problem
+
 class Solution {
-// general solution
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         vector<vector<int>> res;
@@ -12,8 +14,8 @@ public:
             while (i < j) {
                 if (nums[i] + nums[j] == target) {
                     res.push_back({nums[k], nums[i], nums[j]});
-                    while (i < j && nums[i] == nums[i + 1]) ++i;
-                    while (i < j && nums[j] == nums[j - 1]) --j;
+                    while (i < j && nums[i] == nums[i+1]) ++i;
+                    while (i < j && nums[j] == nums[j-1]) --j;
                     ++i; --j;
                 } else if (nums[i] + nums[j] < target) ++i;
                 else --j;

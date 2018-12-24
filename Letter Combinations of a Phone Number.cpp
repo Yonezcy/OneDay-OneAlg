@@ -1,5 +1,5 @@
 // leetcode 17 problem
-// 求出指定的手机按键的字母组合
+// 求手机按键的字母组合
 
 class Solution {
 public:

@@ -7,6 +7,7 @@ class Solution {
         dummy.next = head;
         int length = 0;
         ListNode first = head;
+        // Get the length of the linklist.
         while (first != null) {
             length++;
             first = first.next;

@@ -1,5 +1,5 @@
 // leetcode 20 problem
-// 判断字符串是否为合理的括号对
+// 判断字符串是否为合理的括号对的组合
 
 class Solution {
     public boolean isValid(String s) {

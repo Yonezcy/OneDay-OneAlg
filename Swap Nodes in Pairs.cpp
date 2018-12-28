@@ -1,11 +1,11 @@
 // leetcode 24 problem
-// 两两交换链表中的相邻结点
+// 交换链表中的两两相邻结点
 
 class Solution {
 public:
     ListNode* swapPairs(ListNode* head) {
         if (head == NULL || head->next == NULL) return head;
-        ListNode* fakehead = (ListNode*)malloc(sizeof(ListNode));
+        ListNode* fakehead = (ListNode*) malloc (sizeof(ListNode));
         fakehead->next = head;
         ListNode* ptr1 = fakehead;
         ListNode* ptr2 = head;

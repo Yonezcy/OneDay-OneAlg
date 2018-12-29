@@ -17,7 +17,7 @@ class Solution {
     }
 }
 
-// In-place.
+// In Place.
 class Solution {
     public static int removeDuplicates(int[] nums) {
         if (nums.length == 0) return 0;

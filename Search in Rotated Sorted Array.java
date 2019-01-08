@@ -1,5 +1,5 @@
 // leetcode 33 problem
-// 在一个旋转过的增序的数组中搜索target
+// 在一个旋转过的增序的数组中查找target
 
 class Solution {
     public int search(int[] nums, int target) {
@@ -19,8 +19,7 @@ class Solution {
                 lo = mid + 1;
             else if (num > target)
                 hi = mid - 1;
-            else
-                return mid;
+            else return mid;
         }
         return -1;
     }

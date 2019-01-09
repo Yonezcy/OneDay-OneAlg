@@ -1,10 +1,10 @@
 // leetcode 35 problem
-// 找出有序数组中插入target的位置
+// 找出有序数组中插入target的位置（存在即返回index）
 
 class Solution {
     public int searchInsert(int[] A, int target) {
         int low = 0, high = A.length - 1;
-        while (low <= high){
+        while (low <= high) {
             int mid = (low + high) / 2;
             if (A[mid] == target) return mid;
             else if (A[mid] > target) high = mid - 1;

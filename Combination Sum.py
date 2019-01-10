@@ -1,7 +1,7 @@
 # leetcode 39 problem
-# 求数组中和为target的序列（单个序列中允许重复取数）
+# 求数组中和为target的所有序列（允许重复取某一个数）
 
-# dfs solution
+# DFS Solution.
 class Solution(object):
     def combinationSum(self, candidates, target):
         res = []

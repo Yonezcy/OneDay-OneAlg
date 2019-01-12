@@ -1,5 +1,5 @@
 // leetcode 44 problem
-// 实现通配符的匹配机制
+// 实现通配符匹配(Wildcard Matching)
 
 '''
 1, If p.charAt(j) == s.charAt(i) :  dp[i][j] = dp[i-1][j-1];

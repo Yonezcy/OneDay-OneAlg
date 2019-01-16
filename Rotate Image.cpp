@@ -8,7 +8,7 @@
  * 4 5 6  => 4 5 6  => 8 5 2
  * 7 8 9     1 2 3     9 6 3
 */
-void rotate(vector<vector<int> > &matrix) {
+void rotate(vector<vector<int>> &matrix) {
     reverse(matrix.begin(), matrix.end());
     for (int i = 0; i < matrix.size(); i++) {
         for (int j = i+1; j < matrix[i].size(); j++) {
@@ -24,7 +24,7 @@ void rotate(vector<vector<int> > &matrix) {
  * 4 5 6  => 6 5 4  => 2 5 8
  * 7 8 9     9 8 7     1 4 7
 */
-void anti_rotate(vector<vector<int> > &matrix) {
+void anti_rotate(vector<vector<int>> &matrix) {
     for (auto vi : matrix) reverse(vi.begin(), vi.end());
     for (int i = 0; i < matrix.size(); i++) {
         for (int j = i+1; j < matrix[i].size(); j++) {

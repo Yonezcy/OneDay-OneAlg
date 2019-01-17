@@ -1,11 +1,11 @@
 // leetcode 51th problem
-// n皇后问题
+// N皇后问题
 
 class Solution {
 	public List<List<String>> solveNQueens(int n) {
 		char[][] board = new char[n][n];
-		for (int i=0; i<n; i++)
-			for (int j=0; j<n; j++)
+		for (int i = 0; i < n; i++)
+			for (int j = 0; j < n; j++)
 				board[i][j] = '.';
 		List<List<String>> res = new ArrayList<List<String>>();
 		dfs(board, 0, res);
@@ -17,8 +17,7 @@ class Solution {
 			res.add(construct(board));
 			return;
 		}
-
-		for (int i=0; i<board.length; i++) {
+		for (int i = 0; i < board.length; i++) {
 			if (validate(board, i, colIndex)) {
 				board[i][colIndex] = 'Q';
 				dfs(board, colIndex+1, res);
@@ -28,9 +27,9 @@ class Solution {
 	}
 
 	private boolean validate(char[][] board, int x, int y) {
-		for (int i=0; i<board.length; i++) {
-			for (int j=0; j<y; j++) {
-				if (board[i][j] == 'Q' && (x+j==y+i || x+y==i+j || x==i)) return false;
+		for (int i = 0; i < board.length; i++) {
+			for (int j = 0; j < y; j++) {
+				if (board[i][j] == 'Q' && (x+j == y+i || x+y == i+j || x == i)) return false;
 			}
 		}
 		return true;
@@ -38,7 +37,7 @@ class Solution {
 
 	private List<String> construct(char[][] board) {
 		List<String> res = new ArrayList<String>();
-		for (int i=0; i<board.length; i++) {
+		for (int i = 0; i < board.length; i++) {
 			String s = new String(board[i]);
 			res.add(s);
 		}

@@ -10,7 +10,7 @@ class Solution {
         return list;
     }
 
-    private void backtrack(List<List<Integer>> list, List<Integer> tempList, int [] nums, int remain, int start){
+    private void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums, int remain, int start){
         if (remain < 0) return;
         else if (remain == 0) list.add(new ArrayList<>(tempList));
         else { 

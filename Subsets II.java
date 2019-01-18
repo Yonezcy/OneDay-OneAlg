@@ -1,5 +1,5 @@
 // leetcode 90 problem
-// 求一维数组的所有子集（给的数组中有重复）
+// 求一维数组的所有子集（给定数组中有重复）
 
 // 经典回溯解法(类比permutatuon, combinationsum记忆)
 class Solution {
@@ -10,7 +10,7 @@ class Solution {
         return list;
     }
 
-    private void backtrack(List<List<Integer>> list, List<Integer> tempList, int [] nums, int start){
+    private void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums, int start) {
         list.add(new ArrayList<>(tempList));
         for (int i = start; i < nums.length; i++) {
             if (i > start && nums[i] == nums[i-1]) continue; // skip duplicates

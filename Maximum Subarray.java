@@ -18,7 +18,7 @@ class Solution {
 class Solution {
     public int maxSubArray(int a[]) { 
         int maxSum = 0, thisSum = 0; 
-        for (int j = 0; j < a.size(); j++) {
+        for (int j = 0; j < a.length; j++) {
             thisSum += a[j]; 
             if (thisSum > maxSum) 
                 maxSum = thisSum;

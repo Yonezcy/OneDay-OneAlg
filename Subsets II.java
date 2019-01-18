@@ -1,7 +1,7 @@
 // leetcode 90 problem
 // 求一维数组的所有子集（给的数组中有重复）
 
-// 经典回溯解法，背下来
+// 经典回溯解法(类比permutatuon, combinationsum记忆)
 class Solution {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         List<List<Integer>> list = new ArrayList<>();

@@ -1,5 +1,5 @@
 // leetcode 46 problem
-// 求全排列
+// 求全排列（给定的数组中无重复）
 
 // 回溯法（java实现，类比subset、combination sum记忆）
 class Solution {
@@ -10,7 +10,7 @@ class Solution {
        return list;
     }
 
-    private void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums){
+    private void backtrack(List<List<Integer>> list, List<Integer> tempList, int[] nums) {
        if (tempList.size() == nums.length) {
           list.add(new ArrayList<>(tempList));
        } else {
@@ -21,5 +21,5 @@ class Solution {
              tempList.remove(tempList.size()-1);
           }
        }
-    } 
+    }
 }

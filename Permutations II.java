@@ -4,7 +4,7 @@
 // 经典回溯法，类比subset、combinationsum记忆
 public List<List<Integer>> permuteUnique(int[] nums) {
     List<List<Integer>> list = new ArrayList<>();
-    Arrays.sort(nums); // sorting is neccessary.
+    Arrays.sort(nums); // sorting is necessary.
     backtrack(list, new ArrayList<>(), nums, new boolean[nums.length]);
     return list;
 }

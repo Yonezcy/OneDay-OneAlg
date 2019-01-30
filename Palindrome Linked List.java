@@ -28,6 +28,7 @@ class Solution {
 
     public ListNode reverse(ListNode head) {
         ListNode prev = null;
+        // 迭代法反转链表
         while (head != null) {
             ListNode next = head.next;
             head.next = prev;

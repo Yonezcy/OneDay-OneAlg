@@ -4,9 +4,9 @@
 class Solution {
 public:
     ListNode *reverseBetween(ListNode *head, int m, int n) {
-        if (m == n) return head;
+        if (m == n || head == NULL) return head;
         n -= m;
-        ListNode* fakehead = (ListNode*)malloc(sizeof(ListNode));
+        ListNode* fakehead = (ListNode*) malloc (sizeof(ListNode));
         fakehead->next = head;
         ListNode* pre = fakehead;
         while (--m) pre = pre->next;

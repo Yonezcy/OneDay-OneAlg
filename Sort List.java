@@ -1,13 +1,12 @@
 // leetcode 148 problem
-// 将单链表进行排序，时间复杂度限制在O(nlogn)，空间复杂度为常量空间
+// 将单链表进行排序
 
-// 合并排序法
+// Merge sort，O(nlogn) time，constant space.
 public class Solution {
   public ListNode sortList(ListNode head) {
-    if (head == null || head.next == null)
-      return head;
+    if (head == null || head.next == null) return head;
 
-    // step 1. cut the list to two halves
+    // step 1. cut the list into two halves.
     ListNode prev = null, slow = head, fast = head;
     while (fast != null && fast.next != null) {
       prev = slow;
@@ -16,11 +15,11 @@ public class Solution {
     }
     prev.next = null;
     
-    // step 2. sort each half
+    // step 2. sort each half.
     ListNode l1 = sortList(head);
     ListNode l2 = sortList(slow);
     
-    // step 3. merge l1 and l2
+    // step 3. merge l1 and l2.
     return merge(l1, l2);
   }
   

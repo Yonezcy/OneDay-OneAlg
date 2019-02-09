@@ -6,8 +6,8 @@ void merge_sort(int arr[], int len) {
 	int* b = (int*) malloc(len * sizeof(int));
 	int seg, start;
 	for (seg = 1; seg < len; seg += seg) {
-		for (start = 0; start < len; start += seg + seg) {
-			int low = start, mid = min(start + seg, len), high = min(start + seg + seg, len);
+		for (start = 0; start < len; start += seg+seg) {
+			int low = start, mid = min(start+seg, len), high = min(start+seg+seg, len);
 			int k = low;
 			int start1 = low, end1 = mid;
 			int start2 = mid, end2 = high;

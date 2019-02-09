@@ -32,8 +32,7 @@ void merge_sort(int arr[], const int len) {
 }
 
 void merge_sort_recursive(int arr[], int reg[], int start, int end) {
-	if (start >= end)
-		return;
+	if (start >= end) return;
 	int len = end - start, mid = (len >> 1) + start;
 	int start1 = start, end1 = mid;
 	int start2 = mid + 1, end2 = end;

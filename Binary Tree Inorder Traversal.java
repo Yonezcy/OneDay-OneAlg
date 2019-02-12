@@ -25,7 +25,7 @@ class Solution {
 // Iterative solution
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
-        List<Integer> result = new ArrayList<>();
+        List<Integer> res = new ArrayList<>();
         Deque<TreeNode> stack = new ArrayDeque<>();
         TreeNode p = root;
         while (!stack.isEmpty() || p != null) {
@@ -34,10 +34,10 @@ class Solution {
                 p = p.left;
             } else {
                 TreeNode node = stack.pop();
-                result.add(node.val);  // Add after all left children
+                res.add(node.val);
                 p = node.right;   
             }
         }
-        return result;
+        return res;
     }
 }

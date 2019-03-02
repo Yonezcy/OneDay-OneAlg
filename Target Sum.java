@@ -9,9 +9,9 @@
 class Solution {
     public int findTargetSumWays(int[] nums, int s) {
         int sum = 0;
-        for (int n : nums)
+        for (int n : nums) 
             sum += n;
-        return sum < s || (s + sum) % 2 > 0 ? 0 : subsetSum(nums, (s + sum) >>> 1); 
+        return sum < s || (s+sum) % 2 > 0 ? 0 : subsetSum(nums, (s+sum) >>> 1); 
     }   
 
     // 经典01背包解法，背下来，还有一种是用二维数组的dp[i][j] = dp[i-1][j] || dp[i-1][i-nums[i]]

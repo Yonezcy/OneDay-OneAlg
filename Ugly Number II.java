@@ -1,5 +1,5 @@
 // leetcode 264 problem
-// 寻找ugly number序列中第n个数（ugly number指整数中质因子只有2或3或5的数）
+// 寻找Ugly number序列中第n个数（Ugly number指整数中质因子只有2或3或5的数）
 
 // DP Solution.
 // k[1] = min(k[0]x2, k[0]x3, k[0]x5). The answer is k[0]x2. So we move 2's pointer to 1. Then we test:

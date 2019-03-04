@@ -1,5 +1,5 @@
 // leetcode 713 problem
-// 求数组中乘积小于k的子数组的数量
+// 求数组中乘积小于k的子串的数量
 
 '''
 1. The idea is always keep an max-product-window less than K;

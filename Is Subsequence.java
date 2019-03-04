@@ -1,5 +1,5 @@
 // leetcode 392 problem
-// 判断一个字符串是否为另一个字符串的子串
+// 判断一个字符串是否为另一个字符串的子序列
 
 class Solution {
     public boolean isSubsequence(String s, String t) {

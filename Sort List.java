@@ -37,12 +37,8 @@ public class Solution {
       p = p.next;
     }
     
-    if (l1 != null)
-      p.next = l1;
-    
-    if (l2 != null)
-      p.next = l2;
-    
+    if (l1 != null) p.next = l1;
+    if (l2 != null) p.next = l2;
     return l.next;
   }
 }

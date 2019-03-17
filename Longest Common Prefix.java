@@ -33,6 +33,24 @@ class Solution {
 class Solution {
     public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) return "";
+        String substr = strs[0];
+        for (int i = 1; i < strs.length; i++) {
+            if (strs[i].length() < substr.length()) {
+                substr = substr.substring(0, strs[i].length());
+            }
+            while (!strs[i].substring(0, substr.length()).equals(substr)) {
+                substr = substr.substring(0, substr.length()-1);
+                if (substr.length() == 0) return "";
+            }
+        }
+        return substr;
+    }
+}
+
+// Horizontal scanning(indexOf trick).
+class Solution {
+    public String longestCommonPrefix(String[] strs) {
+        if (strs.length == 0) return "";
         String prefix = strs[0];
         for (int i = 1; i < strs.length; i++) {
             // Function indexOf() return the first index of prefix in strs[i].

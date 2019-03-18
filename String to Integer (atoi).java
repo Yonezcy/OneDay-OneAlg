@@ -11,11 +11,11 @@ public class Solution {
 
         for (int i = 0; i < str.length(); i++) {
             if (sign_count == 0 && hasDigit == 0) {
-                if (str.charAt(i) == " ".charAt(0)) continue;
+                if (str.charAt(i) == ' ') continue;
             }
 
-            if (str.charAt(i) == "+".charAt(0) || str.charAt(i) == "-".charAt(0)) {
-                if (str.charAt(i) == "-".charAt(0)) sign = -1;
+            if (str.charAt(i) == '+' || str.charAt(i) == '-') {
+                if (str.charAt(i) == '-') sign = -1;
                 sign_count++;
                 continue;
             }

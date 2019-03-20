@@ -60,7 +60,7 @@ class Solution {
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         if (s.length() == 0) return 0;
-        HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+        HashMap<Character, Integer> map = new HashMap<>();
         int max = 0;
         // i represents the right pointer, j represents the left point.
         for (int i = 0, j = 0; i < s.length(); i++) {

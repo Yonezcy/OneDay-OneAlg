@@ -1,5 +1,5 @@
 // leetcode 402 problem
-// 移除字符串中的k个字符，使余下的字符最小
+// 移除字符串中的k个字符，使余下的数字最小
 
 class Solution {
     public String removeKdigits(String num, int k) {

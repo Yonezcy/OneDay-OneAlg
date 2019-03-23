@@ -56,7 +56,7 @@ class Solution {
     }
 }
 
-// Two pointers Solution
+// Sliding Window Solution.
 class Solution {
     public int lengthOfLongestSubstring(String s) {
         if (s.length() == 0) return 0;

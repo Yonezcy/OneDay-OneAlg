@@ -8,7 +8,7 @@ class Solution {
         for (int i = 1; i < nums.length; i++) {
             if (preSum < 0) preSum = nums[i];
             else preSum += nums[i];
-            if (preSum > totalSum) totalSum = preSum;
+            totalSum = Math.max(totalSum, preSum);
         }
         return totalSum;
     }

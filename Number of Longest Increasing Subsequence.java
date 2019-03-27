@@ -9,7 +9,7 @@ class Solution {
         int max_len = 0;
         int res = 0;
 
-        for (int i = 1; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             dp[i] = 1;
             count[i] = 1;
             for (int j = 0; j < i; j++) {

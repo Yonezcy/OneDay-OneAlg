@@ -9,7 +9,7 @@ public class Solution {
         int n = a.length;
         
         // step 1. reverse the whole string
-        reverse(a, 0, n - 1);
+        reverse(a, 0, n-1);
         // step 2. reverse each word
         reverseWords(a, n);
         // step 3. clean up spaces

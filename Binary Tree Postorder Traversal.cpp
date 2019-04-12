@@ -6,8 +6,7 @@ class Solution {
 public:
     vector<int> postorderTraversal(TreeNode *root) {
        vector<int> res;
-       if (!root)
-           return res;
+       if (!root) return res;
        stack<TreeNode *> st;
        st.push(root);
        while (st.size()) {

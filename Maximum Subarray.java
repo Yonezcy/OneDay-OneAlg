@@ -1,20 +1,20 @@
 // leetcode 53 problem
-// 求数组最大连续子序列和
+// 求数组最大子串和
 
 class Solution {
-    public int maxSubArray(int[] nums) {
-        int preSum, totalSum;
-        preSum = totalSum = nums[0];
+    // 状态转移方程：dp[i] = max(dp[i]+nums[i], nums[i]).
+    public int maxSubarray(int[] nums) {
+        int preSum = nums[0];
+        int totalSum = nums[0];
         for (int i = 1; i < nums.length; i++) {
-            if (preSum < 0) preSum = nums[i];
-            else preSum += nums[i];
+            preSum = Math.max(preSum+nums[i], nums[i]);
             totalSum = Math.max(totalSum, preSum);
         }
         return totalSum;
     }
 }
 
-// 只适用于非0数组
+// 只适用于有元素大于等于0的数组
 class Solution {
     public int maxSubArray(int a[]) { 
         int maxSum = 0, thisSum = 0; 

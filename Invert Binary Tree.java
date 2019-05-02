@@ -1,5 +1,5 @@
 // leetcode 226 problem
-// 将一颗二叉树反转
+// 反转二叉树
 // Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard.
 
 // Recursive Solution.

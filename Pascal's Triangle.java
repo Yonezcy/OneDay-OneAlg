@@ -17,9 +17,7 @@ class Solution {
     public static void main(String[] args) {
         int numRows = 0;
         Scanner sc = new Scanner(System.in);
-        if (sc.hasNextInt()) {
-            numRows = sc.nextInt();
-        }
+        numRows = sc.nextInt();
         Solution solution = new Solution();
         System.out.println(solution.generate(numRows));
     }

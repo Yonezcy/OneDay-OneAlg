@@ -10,8 +10,7 @@ class Solution {
             int curr = 0;
             if (coin <= amount) {
                 int next = coinChange(coins, amount-coin);
-                if (next >= 0) 
-                    curr = next + 1;
+                if (next >= 0) curr = next + 1;
             }
             if (curr > 0) 
                 n = Math.min(n, curr);

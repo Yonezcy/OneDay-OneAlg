@@ -1,8 +1,8 @@
 // leetcode 110 problem
 // 判断一个二叉树是否是平衡二叉树
 
-// first Solution：自顶向下搜索
-// 算法思想为，判断当前结点是否是平衡二叉树需判断，1.左子树和右子树的深度是否<=1，2.左子树和右子树均为平衡二叉树
+// First Solution：自顶向下搜索.
+// 算法思想为，判断当前结点是否是平衡二叉树需判断. 1.左子树和右子树的深度是否<=1. 2.左子树和右子树均为平衡二叉树.
 class Solution {
     public boolean isBalanced(TreeNode root) {
         if (root == null) return true;
@@ -17,7 +17,7 @@ class Solution {
     }
 }
 
-// second Solution：自底向上搜索
+// Second Solution：自底向上搜索.
 class Solution {
     public boolean isBalanced(TreeNode root) {
         return dfsHeight(root) != -1;
@@ -25,12 +25,10 @@ class Solution {
     
     public int dfsHeight(TreeNode root) {
         if (root == null) return 0;
-        
         int leftHeight = dfsHeight(root.left);
         if (leftHeight == -1) return -1;
         int rightHeight = dfsHeight(root.right);
         if (rightHeight == -1) return -1;
-        
         if (Math.abs(leftHeight-rightHeight) > 1)  return -1;
         return Math.max(leftHeight, rightHeight) + 1;
     }

@@ -6,19 +6,17 @@ def quicksort(r, left, right):
         quicksort(r, i+1, right)
 
 def partition(r, left, right):
-    zhuyuan = r[left]
-
+    p = r[left]
     while left < right:
-        while left < right and r[right] >= zhuyuan:
+        while left < right and r[right] >= p:
             right = right - 1
         if left < right:
             r[left] = r[right]
             left = left + 1
-        while left < right and r[left] < zhuyuan:
+        while left < right and r[left] < p:
             left = left + 1
         if left < right:
             r[right] = r[left]
             right = right - 1
-
-    r[left] = zhuyuan
+    r[left] = p
     return left

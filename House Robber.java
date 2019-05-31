@@ -3,7 +3,7 @@
 // https://leetcode.com/problems/house-robber/discuss/156523/From-good-to-great.-How-to-approach-most-of-DP-problems.
 // Above is a terrific summary of how to build and solve dp problems.
 
-// DP Solution
+// DP Solution.
 class Solution {
     public int rob(int[] nums) {
         if (nums.length == 0) return 0;
@@ -18,7 +18,7 @@ class Solution {
     }
 }
 
-// Space-saved dp approach
+// Space-saved dp approach.
 public int rob(int[] nums) {
     if (nums.length == 0) return 0;
     int prev1 = 0;

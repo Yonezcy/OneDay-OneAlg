@@ -17,6 +17,6 @@ class Solution {
                 }
             }
         }
-        return dp[s.length()+1][t.length()+1];
+        return dp[s.length()][t.length()];
     }
 }

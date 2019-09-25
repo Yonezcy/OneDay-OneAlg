@@ -1,4 +1,6 @@
-# 快速排序
+import random
+
+# quick sort
 def quicksort(r, left, right):
     if left < right:
         i = partition(r, left, right)
@@ -20,3 +22,10 @@ def partition(r, left, right):
             right = right - 1
     r[left] = p
     return left
+
+if __name__ == "__main__":
+    nums = [i for i in range(100)]
+    random.shuffle(nums)
+    print nums
+    quicksort(nums, 0, 99)
+    print nums

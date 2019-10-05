@@ -4,24 +4,26 @@
 class Solution {
 public:
     ListNode* mergeList(vector<ListNode*>& list) {
-        if (list.size() == 0) return null;
-        auto cmp = [](ListNode*& a, ListNode*& b) {
+        if (list.size() == 0) return NULL;
+        auto cmp = [](ListNode* a, ListNode* b) {
             return a->val > b->val;
         };
-        priority_queue<ListNode*, vector<ListNode*>, decltype(cmp)> queue(cmp);
+        priority_queue<ListNode*, vector<ListNode*>, decltype(cmp) > queue(cmp);
         ListNode* res = new ListNode(-1);
         ListNode* cur = res;
         
         for (auto node: list) {
-            queue.push(node);
+            if (node) {
+                queue.push(node);
+            }
         }
         while (!queue.empty()) {
-            auto q = q.top();
+            auto tmp = q.top();   
             q.pop();
-            cur->next = t;
+            cur->next = tmp;
             cur = cur->next;
-            if (cur->next) {
-                queue.push(cur->next);
+            if (tmp->next) {
+                queue.push(tmp->next);
             }
         }
         return res->next;
